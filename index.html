@@ -19,40 +19,19 @@
 </head>
 <body>
 <script>
-<script>
-document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
-return false;
-}
-}
-</script>
+    document.addEventListener('keydown', function() {
+  if (event.keyCode == 123) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    return false;
+  }
+}, false);
+
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
     alert("This function has been disabled to prevent you from stealing my code!");
@@ -64,13 +43,7 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-  new Crate({
-    server: '827738234397392898', // testing for master server
-    channel: '827738234397392906' // #test
-  })
-</script>
+    </script>
 <nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
@@ -147,7 +120,7 @@ if (document.addEventListener) {
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
                 <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;"><iframe src="https://discord.com/widget?id=787245326183432192&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">Discord Server</p>
+                <p style="font-weight: bold !important;font-size: 20px !important;"></p>
             </div>
         </div>
     </div>
@@ -166,7 +139,7 @@ if (document.addEventListener) {
     <div class="footer">
         <div class="bot-footer">
             <img src="assets/
-                      Word.png" width="150"><br />
+                      BotLogoWord.png" width="150"><br />
             Copyright © Thecubingmaster123 - 2020
         </div><br/>
         <div class="Thecubingmaster123">website designed by Thecubingmaster123</div>
