@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#990099">
+    <meta property= "og:image" content= "https://moderatorbotdc.tk/assets/BotLogo.png" />
+    <meta property="og:url" content="https://moderatorbotdc.tk/" />
+    <meta property= "og:title" content= "Moderator - The Best Discord Bot" />
+    <meta property= "og:description" content= "Moderator is the best discord bot that can be used for every purpose in discord" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <title>Thank you</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon-32x32.png"/>
+</head>
+  
+  <style>
+		@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+		@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+	</style>
+	<link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/jquery-1.9.1.min.js"></script>
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
+</head>
+<body>
+	<header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
+	</header>
+
+	<div class="main-content">
+		<p class="main-content__body" data-lead-id="main-content-body" id="thanksmain"></p>
+	</div>
+  <script>
+		window.onload = () => {
+			const code = location.href.substring(location.href.indexOf("code")+5, location.href.length)
+
+			if (location.href.indexOf("code") > -1) {
+                const req = new XMLHttpRequest()
+                req.open("POST", "https://moderatorbotdc.tk/thanks")
+                req.send(code)
+                req.onload = () => {
+                    
+                    document.getElementById("thanksmain").innerText = `Thank you ${req.responseText} for inviting moderator to your server. It means a lot to us.!😊`
+                }
+
+			}
+		}
+	</script>
+
+	<footer class="site-footer" id="footer">
+		<p class="site-footer__fineprint" id="fineprint">Copyright ©2014 | All Rights Reserved</p>
+	</footer>
+</body>
+</html> 
