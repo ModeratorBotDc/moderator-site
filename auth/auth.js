@@ -10,7 +10,7 @@ app.use(bodyParser.text());
 
 
 app.get('/', function (req, res) {
-   res.sendFile("../thanks");
+   res.sendFile("../thanks.html");
 })
 app.post('/', function (req, res) {
     const data = new FormData();
